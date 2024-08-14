@@ -1,0 +1,33 @@
+<h1>Os meus novos amigos falsos</h1>
+<br/>
+<div id="friends">
+  <table class="table table-hover">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Apelido</th>
+        <th scope="col">Email</th>
+        <th scope="col">Teléfono</th>
+        <th scope="col">Twitter</th>
+        <th scope="col">Usuario amigo</th>
+        <th scope="col">Mostrar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @friends.each do |friend| %>
+        <%= render friend %>
+        <% end %>
+    </tbody>
+  </table>
+
+
+  <!--
+    <% @friends.each do |friend| %>
+      <%= render friend %>
+      <p>
+        <%= link_to "Show this friend", friend %>
+      </p>
+    <% end %>-->
+</div>
+<br/>
+<%= link_to "Novo amigo", new_friend_path, class: "btn btn-primary" %>

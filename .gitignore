@@ -1,1 +1,7 @@
 .*
+
+*.rsls
+*.rslsc
+*.workspace
+
+playground/testFile
